@@ -5,7 +5,7 @@ const App = () => (
     <header>
       <h1 className="app-header__title">Super Sticky Notes</h1>
       <aside className="app-header__controls">
-        <button>+ New Note</button>
+        <button className="add-new">+ New Note</button>
         <input
           className="search add-new"
           type="text"
