@@ -13,6 +13,10 @@ const Note = (props) => {
     props.onType(editMeId, "description", updatedValue);
   };
 
+  const noteDeletion = () => {
+    props.removeNote(noteBeingDeleted);
+  };
+  //props.note.id//
   return (
     <li className="note">
       <input
@@ -28,7 +32,9 @@ const Note = (props) => {
         className="note__description"
         onChange={updateDescription}
       />
-      <span className="note__delete">X</span>
+      <span className="note__delete" onClick={noteDeletion}>
+        X
+      </span>
     </li>
   );
 };
