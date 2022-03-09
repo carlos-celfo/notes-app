@@ -14,9 +14,9 @@ const Note = (props) => {
   };
 
   const noteDeletion = () => {
-    props.removeNote(noteBeingDeleted);
+    props.removeNote(props.note);
   };
-  //props.note.id//
+
   return (
     <li className="note">
       <input

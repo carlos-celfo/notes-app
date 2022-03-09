@@ -7,12 +7,13 @@ const NotesList = (props) => {
 
   const renderNote = (note) => (
     <Note
-      removeNote={props.removeNote}
-      onType={props.onType}
       note={note}
       key={note.id}
+      onType={props.onType}
+      removeNote={props.removeNote}
     />
   );
+
   const noteElements = filteredSearch.map(renderNote);
   return <ul className="notes-list">{noteElements}</ul>;
 };
